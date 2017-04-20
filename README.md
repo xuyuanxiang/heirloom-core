@@ -7,22 +7,22 @@
 ## 安装
 
 ```npm
-npm install @heirloom/server --save
+npm install heirloom-server --save
 ```
 
 ## 相关项目
 
 遵循**规约重于配置的思想**所实现的一些插件，尽量减少业务以外不必要的代码量。
 
-### [@heirloom/static-plugin]()
+### [heirloom-static-plugin]()
 
 用于打包构建客户端静态资源，具体请移步[查看详情]()。
 
-### [@heirloom/api-plugin]()
+### [heirloom-api-plugin]()
 
 用于包装后端RPC或其他各种服务，提供统一接口，具体请移步[查看详情]()。
 
-### [@heirloom/security-plugin]()
+### heirloom-security-plugin
 
 用于保护请求资源已经接口鉴权的插件，目前有以下两种实现：
 

@@ -1,5 +1,5 @@
 {
-  "name": "@heirloom/server",
+  "name": "heirloom-server",
   "version": "1.0.0",
   "description": "Heirloom Server",
   "main": "index.js",
@@ -20,7 +20,7 @@
     "prebuild": "npm run lint && npm run flow && npm run clean",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
     "prerelease": "npm run build",
-    "release": "npm publish",
+    "release": "npm publish --registry https://registry.npmjs.org/",
     "lint": "eslint .",
     "flow": "flow"
   },
