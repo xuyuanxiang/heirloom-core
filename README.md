@@ -1,4 +1,4 @@
-# heirloom-server
+# heirloom-core
 
 定义标准接口及泛型，以不变应万变。
 
@@ -7,7 +7,7 @@
 ## 安装
 
 ```npm
-npm install heirloom-server --save
+npm install heirloom-core --save
 ```
 
 ## 相关项目

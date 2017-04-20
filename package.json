@@ -1,7 +1,7 @@
 {
-  "name": "heirloom-server",
+  "name": "heirloom-core",
   "version": "1.0.0",
-  "description": "Heirloom Server",
+  "description": "Heirloom Core Module",
   "main": "index.js",
   "author": "xuyuanxiang <chaos@xuyuanxiang.cn> (http://xuyuanxiang.me)",
   "engines": {
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xuyuanxiang/heirloom-server.git"
+    "url": "git+https://github.com/xuyuanxiang/heirloom-core.git"
   },
   "bugs": {
-    "url": "https://github.com/xuyuanxiang/heirloom-server/issues"
+    "url": "https://github.com/xuyuanxiang/heirloom-core/issues"
   },
-  "homepage": "https://github.com/xuyuanxiang/heirloom-server",
+  "homepage": "https://github.com/xuyuanxiang/heirloom-core",
   "scripts": {
     "clean": "rimraf lib",
     "prebuild": "npm run lint && npm run flow && npm run clean",

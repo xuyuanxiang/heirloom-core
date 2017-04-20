@@ -1,5 +1,5 @@
 /**
- * @module heirloom-server
+ * @module heirloom-core
  * @description
  *  Server接口的常规实现
  *
