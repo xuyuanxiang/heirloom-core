@@ -16,9 +16,10 @@
     ],
     "parser": "babel-eslint",
     "parserOptions": {
+        "ecmaVersion": 7,
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
-            "jsx": false
+            "jsx": true
         },
         "sourceType": "module"
     },
@@ -32,7 +33,7 @@
         ],
         "quotes": [
             "off",
-            "double"
+            "single"
         ],
         "linebreak-style": [
             "error",

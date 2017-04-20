@@ -7,18 +7,25 @@
  * @author xuyuanxiang
  * @date 2017/2/3
  */
+import KoaEngine from './engines/KoaEngine';
+
+export type NormalServerOptions = {
+    port?: number,
+    engine?: Heirloom$Engine,
+    logger: Heirloom$Logger,
+}
 
 export default class NormalServer {
 
     port: number;
-    engine: WSEngine;
-    logger: WSLogger;
+    engine: Heirloom$Engine;
+    logger: Heirloom$Logger;
 
-    constructor({ port, engine, logger }: {
-        port: number,
-        engine: WSEngine,
-        logger: WSLogger
-    } = {}) {
+    constructor({
+                    port = Number(process.env.PORT),
+                    engine = KoaEngine.shareInstance(),
+                    logger,
+                }: NormalServerOptions = {}) {
         if (engine == null) {
             throw new TypeError('非法构造参数："engine"，不能为空！');
         }
@@ -32,11 +39,11 @@ export default class NormalServer {
         this.logger = logger;
         this.port = port;
         this.engine.on("error", (err) => {
-            logger.fatal("occur error:", err);
+            this.logger.error("occur error:", err);
         });
     }
 
-    apply(plugin: WSPlugin): void {
+    apply(plugin: Heirloom$Plugin): void {
         if (plugin == null) {
             throw new TypeError('应用插件失败，参数不能为空！');
         }

@@ -1,7 +1,11 @@
-// @flow
-import koa from "koa";
+/**
+ * @flow
+ * @author xuyuanxiang
+ * @date 2017/2/3
+ */
+import koa from 'koa';
 
-const pkg = require("koa/package.json");
+const pkg = require('koa/package.json');
 
 export default class KoaEngine {
     name: string = pkg.name;
@@ -24,11 +28,11 @@ export default class KoaEngine {
         generator.forEach(it => this.koa.use(it));
     }
 
-    listen(port: number, callback: ()=>void): void {
+    listen(port: number, callback: () => void): void {
         this.koa.listen(port, callback);
     }
 
-    on(event: "error", callback: (error: Error) => void): void {
+    on(event: string, callback: (error: Error) => void): void {
         this.koa.on(event, callback);
     }
 }
