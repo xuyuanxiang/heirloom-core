@@ -14,9 +14,9 @@ npm install heirloom-core --save
 
 遵循**规约重于配置的思想**所实现的一些插件，尽量减少业务以外不必要的代码量。
 
-### [heirloom-static-plugin]()
+### [heirloom-static-plugin](https://github.com/xuyuanxiang/heirloom-static-plugin#heirloom-static-plugin)
 
-用于打包构建客户端静态资源，具体请移步[查看详情]()。
+用于打包构建客户端静态资源，具体请移步[查看详情](https://github.com/xuyuanxiang/heirloom-static-plugin#heirloom-static-plugin)。
 
 ### [heirloom-api-plugin]()
 
