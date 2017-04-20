@@ -3,7 +3,7 @@
  * @author xuyuanxiang
  * @date 2017/2/3
  */
-import koa from 'koa';
+import Koa from 'koa';
 
 const pkg = require('koa/package.json');
 
@@ -21,7 +21,7 @@ export default class KoaEngine {
     }
 
     constructor() {
-        this.koa = koa();
+        this.koa = new Koa();
     }
 
     use(...generator: any): void {
