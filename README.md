@@ -20,11 +20,13 @@ npm install heirloom-core --save
 
 用于打包构建客户端静态资源，具体请移步[查看详情](https://github.com/xuyuanxiang/heirloom-static-plugin#heirloom-static-plugin)。
 
-### [heirloom-api-plugin]()
+### [heirloom-api-plugin](https://github.com/xuyuanxiang/heirloom-api-plugin)
 
 用于包装后端RPC或其他各种服务，提供统一接口，具体请移步[查看详情]()。
 
 ### heirloom-security-plugin
+
+TODO: coming soon...
 
 用于保护请求资源已经接口鉴权的插件，目前有以下两种实现：
 
@@ -32,7 +34,7 @@ npm install heirloom-core --save
 
 + JSON Web Token
 
-+ OAuth2  // TODO: coming soon...
++ OAuth2
 
 ## 工程目录
 
