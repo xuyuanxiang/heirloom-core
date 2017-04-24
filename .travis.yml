@@ -3,18 +3,19 @@ node_js:
 - node
 branches:
   only:
-  - /^\d{1}\.\d{1,2}.\d{1,2}$/
+  - "/^\\d{1}\\.\\d{1,2}.\\d{1,2}$/"
 notifications:
   email:
     recipients:
-      - chaos@xuyuanxiang.cn
+    - chaos@xuyuanxiang.cn
     on_success: never
     on_failure: always
-before_deploy: "npm run release"
+before_deploy: npm run release
 deploy:
-  on:
-    tags: true
   provider: npm
   email: chaos@xuyuanxiang.cn
   api_key:
-    secure: fR99OSmjVrJIdQ0MnRi+njtIAWezxWqXbzw3iURBvHTE8XWxhrbHBMFJaPoLyqyuNZtcuA4uHpbfeOFqePzm/b0seA9HmgvpFy6fhceu/uy7x6jEXiZdWIF2Ew5+ooRrl39XyaRFpuQ1f/D/+913kPsImY6B02pzkdmfu7sHfIJhtHWaB+OLHQKBoDXH+iXpEGKUbHYIuNtHgJunvqIhdCMdYrfBPAsptW0PGYy5x3ts1W5CVAuSbRHJxdjqd0ata2QqaSq9V1E7TEFGdiEH0tG+/nxIjFIn/g1IUOBNSbkAO/hReCpGim3O91YBF9RviBSwA+CeCsZ9kOnM9kJSKR0NdP+lc5IOg69sQpe5uIyQhb0sLJjRbOtzTwUJUpzw4TsXlp2Ey7lXGV6ThflfqSWHaehGH4YafjJ4/9efP2YAC1JtUvv00j0diHNAPVS3d/jQI9l4g34Eug4oHS2T5teXLoKau07TEAJGseX3FdHceN5P9OL6rIbPNMfMG21vGpF+cHq5IaRoqv9Wbn9uxxk5olRByWYY/lWzYGbwLHGdXriI/IGyHYbVFXhPkCj+F80zm4cgxXjDvSO2j1RvtqNlIM1eJn1qSOwhmiWUY5532up8GO01m9ZnsvfTtz+2gtR5/3lNKVafUq6X+3YjBU/9xeuQ2+39IDDC9EeTrwA=
+    secure: JJj03thAcD47h7pD7SkyBTd7E5+SEIE2U5O1IOWVajNPf7uNVTFvIJvassUpXkPQgvLahu4fyFq1galsZTxVyA6aah+uGB2qulYGJNYn3/gQr8JddUsykHt8zxmLjDEXZZl3JPDQb/mfeqAzyixa5gVZpm3khHfGnpw2Fe9K1cFS8/BKoFE+6sEEBRf97wVw2tSV55b93P0A5R62bciMv+wAaVL80UQnovV5gSvc14KoMhTC2cLp9lrgfC8Y8YQfdMWP6hCDVrfn2LxutZCEFSrIJb2v6PyLq+81toZ9q0lhLDLhxaSL2XqmNKLpZzOOe560Il3WwE10pHitu4yr02j47qX+ECQ29vTPi7L3zkdy8DyBcm/82bldaH6nS5xefPZwz6avALJoqex1umayTimB3zoDZCM5RRi9l5tlNnlf0j/2yasa3Tb+Az6KCpZl/7tTT3WFlE4iUB93law9lQ8oOTvmoQlMsNCkWB8lOpAlvoKGvQkZH6pwdsqQ6TaeFrlDKYr5JhEz6kbxpxz22ZX3C/N7BpygFOobr03oR2+ABIipJ9WV/E+O8Brpz62fX6zi9Er77VnlxEfIJ3/0qx56gxYJK3hL+CP6LRqNBrTBEp3uCBqfer7aTwaDdyhO54VeLgKQQFtmBnjyUyF2TO0P/MGaljfXc+Czih5FJXs=
+  on:
+    tags: true
+    repo: xuyuanxiang/heirloom-core
