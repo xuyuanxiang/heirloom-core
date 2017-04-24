@@ -99,3 +99,4 @@ yarn*
 src
 flow-typed/npm
 .babelrc
+.travis.yml
