@@ -10,7 +10,7 @@ notifications:
     - chaos@xuyuanxiang.cn
     on_success: never
     on_failure: always
-before_deploy: npm run release
+before_deploy: npm run build
 deploy:
   provider: npm
   email: chaos@xuyuanxiang.cn
