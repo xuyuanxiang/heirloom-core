@@ -1,7 +1,8 @@
 # heirloom-core  [![NPM version](http://img.shields.io/npm/v/heirloom-core.svg?style=flat)](https://npmjs.org/package/heirloom-core)
- [![NPM Downloads](https://img.shields.io/npm/dm/heirloom-core.svg?style=flat)](https://npmjs.org/package/heirloom-core)
-  [![Node.js Version](https://img.shields.io/node/v/heirloom-core.svg?style=flat)](http://nodejs.org/download/)
-  [![Build Status](https://img.shields.io/travis/xuyuanxiang/heirloom-core/master.svg?style=flat-square)](https://travis-ci.org/xuyuanxiang/heirloom-core)
+
+[![NPM Downloads](https://img.shields.io/npm/dm/heirloom-core.svg?style=flat)](https://npmjs.org/package/heirloom-core)
+[![Node.js Version](https://img.shields.io/node/v/heirloom-core.svg?style=flat)](http://nodejs.org/download/)
+[![Build Status](https://api.travis-ci.org/xuyuanxiang/heirloom-core.svg?style=flat-square)](https://travis-ci.org/xuyuanxiang/heirloom-core)
 
 + koa^2.2.0(http://koajs.com/)
 
